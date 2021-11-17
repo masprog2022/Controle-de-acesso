@@ -1,9 +1,9 @@
 {
   "type": "postgres",
-  "port": 5432,
+  "port": 5433,
   "host": "localhost",
-  "username": "admin",
-  "password": "admin",
+  "username": "postgres",
+  "password": "docker",
   "database": "permissions",
   "entities": ["./src/entities/*.ts"],
   "migrations": ["./src/database/migrations/*.ts"],
