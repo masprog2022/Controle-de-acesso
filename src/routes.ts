@@ -19,7 +19,7 @@ routes.get("/products", new GetAllProductsController().handle);
 routes.post(
   "/products",
   ensuredAuthenticated(),
-  can(["create_product", "list_product"]),
+  can(["list_product"]),
   new CreateProductController().handle
 );
 

@@ -22,6 +22,8 @@ export class CreateUserService {
 
     await UserRepository().save(user);
 
+    delete user.password;
+
     return user;
   }
 }
